@@ -52,7 +52,7 @@
 21. 點擊左側選單的"編輯器"
 22. 在 Google Apps Script 中修改剛剛複製的 GitHub Code 中的：<br/>
     (22.1) 取得 LINE 的 Channel access token：<br/>
-         (22.1.1) 登入https://developers.line.biz/console/，依序操作：<br/>
+         (22.1.1) 登入 https://developers.line.biz/console/ ，依序操作：<br/>
          (22.1.2) 進入你在第 1 步中所建立的 Line Developers Provider<br/>
          (22.1.3) 選擇 Messaging API 頁籤<br/>
          (22.1.4) 找到 Channel access token 區塊，點擊"Issue"<br/>
