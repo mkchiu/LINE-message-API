@@ -33,6 +33,7 @@ function doPost(e) {
 //觸發條件不使用以下function
 function 業務報報_下班打卡() {
   var token = 'Channel access token';  //Line Developers-Messaging API-Channel access token
+  var userId = ''
   var message = "【LINE提醒】平日下班打卡"; //可輸入任何文字
   var url = 'https://api.line.me/v2/bot/message/push';
   UrlFetchApp.fetch(url, {
