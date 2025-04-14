@@ -1,6 +1,6 @@
 # LINE-message-API
 
-LINE 群組定時自動訊息通知設定指南
+LINE 群組定時自動訊息通知設定指南：
 1. 前往 LINE Developer Console，建立一個 Provider，並記下你設定的 Provider 名稱：
    https://developers.line.biz/zh-hant/services/messaging-api/
 ======================================================================================   
@@ -23,6 +23,14 @@ LINE 群組定時自動訊息通知設定指南
 ======================================================================================
 9. 登入 Google 雲端硬碟的 JavaScript Apps Script 平台 (Google Apps Script)
    https://script.google.com/home?hl=zh-tw
-10. 
+10. 成功登入後，點擊左上角" + 新專案"
+11. 點擊左側選單的"專案設定"，在"一般設定"的時區選擇"台北標準時間-台北(GMT+08:00)"
+12. 點擊左側選單的"編輯器"
+13. 先將"程式嗎.gs"檔案的右側 Code Window 中的 function myFunction() {} 刪除
+14. 再將 GitHub Code (punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
+15. 修改 GitHub Code 中的
+    (1) line_token、token
+    (3) userId：
+    (4) 其他：例如 訊息(message)、時間 (days[]、atHour()、nearMinute())
    
    
