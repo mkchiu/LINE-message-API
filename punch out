@@ -1,0 +1,71 @@
+function doPost(e) {
+
+  var line_token = 'Channel access token';  //Line Developers-Messaging API-Channel access token
+
+
+  var data = JSON.parse(e.postData.contents);
+
+  console.log(data);
+
+  // 讀取文字
+  var replyToken = data.events[0].replyToken;
+  var message = data.events[0].message.text;
+  var userId ;
+  var groupId ;
+  var output;
+
+
+  if (typeof replyToken === 'undefined') {
+    output = "無回傳Token";
+  }
+
+  if (message.trim().toLowerCase() == "id") //在LINE群組內輸入id兩個字，機器人會回傳"群組ID"
+  {
+    message = "回覆您的文字訊息：" + userId + "\n";
+    if (groupId != undefined)
+      message += "群組 ID：" + groupId + "\n";
+    Line_Bot(line_token, replyToken, message);
+    output = "執行成功";
+  }
+  return ContentService.createTextOutput(output);
+}
+
+//觸發條件不使用以下function
+function 業務報報_下班打卡() {
+  var token = 'Channel access token';  //Line Developers-Messaging API-Channel access token
+  var message = "【LINE提醒】平日下班打卡"; //可輸入任何文字
+  var url = 'https://api.line.me/v2/bot/message/push';
+  UrlFetchApp.fetch(url, {
+    'headers': {
+      'Content-Type': 'application/json; charset=UTF-8',
+      'Authorization': 'Bearer ' + token,
+    },
+    'method': 'post',
+    'payload': JSON.stringify({
+      'to': userId,
+      'messages': [{
+        'type': 'text',
+        'text': message
+      }],
+    }),
+  });
+}
+
+//觸發條件請使用以下function
+function 業務報報_下班打卡Triggers() {
+   var days = [ScriptApp.WeekDay.MONDAY, 
+               ScriptApp.WeekDay.TUESDAY,
+               ScriptApp.WeekDay.WEDNESDAY, 
+               ScriptApp.WeekDay.THURSDAY,                                            
+               ScriptApp.WeekDay.FRIDAY
+               //ScriptApp.WeekDay.SATURDAY  //註解 Comment out
+               //ScriptApp.WeekDay.SUNDAY  //註解 Comment out
+                ];
+   for (var i=0; i<days.length; i++) {
+      ScriptApp.newTrigger("業務報報_下班打卡")
+               .timeBased().onWeekDay(days[i])
+               .atHour(18)  //下午6點
+               .nearMinute(5)   //接近5分時, 觸發條件請選擇"日計時器""下午6點至晚上7點"
+               .create();
+   }
+}
