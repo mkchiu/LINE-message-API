@@ -31,12 +31,24 @@
     (4) 最終會出現 [啟用Messaging API] ，直接點選確定<br/>
 ================================================================================
 ================================================================================
-11. 登入 Google 雲端硬碟的 JavaScript Apps Script 平台 (Google Apps Script)
-   https://script.google.com/home?hl=zh-tw
-12. 成功登入後，點擊左上角" + 新專案"
+10. 登入 Google 雲端硬碟的 JavaScript Apps Script 平台 (Google Apps Script)
+    https://script.google.com/home?hl=zh-tw
+11. 成功登入後，點擊左上角" + 新專案"
+12. 先將"程式嗎.gs"檔案的右側 Code Window 中的默認程式碼： function myFunction() {} 刪除
+13. 再將 GitHub Code (例如：punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
+14. 點擊儲存：將專案儲存至雲端硬碟
+15. 點擊執行，會出現"需要授權"
+16. 依序點擊以下：
+    審查授權 >
+    選擇帳戶 >
+    出現紅色三角警語 (這個應用程式未經Google驗證) >
+    點擊警語下方左側的 "進階" >
+    點擊 "前往「未命名的專案」(不安全)" >
+    選取要讓「未命名的專案」存取的範圍，選擇"全選" > 
+
 13. 點擊左側選單的"專案設定"，在"一般設定"的時區選擇"台北標準時間-台北(GMT+08:00)"
 14. 點擊左側選單的"編輯器"
-15. 先將"程式嗎.gs"檔案的右側 Code Window 中的 function myFunction() {} 刪除
+15. 先將"程式嗎.gs"檔案的右側 Code Window 中的默認程式碼： function myFunction() {} 刪除
 16. 再將 GitHub Code (punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
 17. 修改 GitHub Code 中的
     (1) line_token、token：改成
