@@ -38,21 +38,28 @@
 13. 再將 GitHub Code (例如：punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
 14. 點擊儲存：將專案儲存至雲端硬碟
 15. 點擊執行，會出現"需要授權"
-16. 依序點擊以下：
-    審查授權 >
-    選擇帳戶 >
-    出現紅色三角警語 (這個應用程式未經Google驗證) >
-    點擊警語下方左側的 "進階" >
-    點擊 "前往「未命名的專案」(不安全)" >
-    選取要讓「未命名的專案」存取的範圍，選擇"全選" > 
-
+16. 依序點擊以下：<br/>
+    審查授權<br/>
+    選擇帳戶<br/>
+    出現紅色三角警語 (這個應用程式未經Google驗證)<br/>
+    點擊警語下方左側的 "進階"<br/>
+    點擊 "前往「未命名的專案」(不安全)"<br/>
+    選取要讓「未命名的專案」存取的範圍，選擇"全選"<br/>
+    點選"繼續"<br/>
+17. 彈窗消失之後，回到 App Script，此時下方的執行紀錄出現錯誤，錯誤訊息：doPost @ 程式碼.gs:6
 13. 點擊左側選單的"專案設定"，在"一般設定"的時區選擇"台北標準時間-台北(GMT+08:00)"
 14. 點擊左側選單的"編輯器"
-15. 先將"程式嗎.gs"檔案的右側 Code Window 中的默認程式碼： function myFunction() {} 刪除
-16. 再將 GitHub Code (punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
-17. 修改 GitHub Code 中的
-    (1) line_token、token：改成
-    (2) userId (先不改)
-    (3) 其他：例如 訊息(message)、時間 (days[]、atHour()、nearMinute())
+17. 在 Google Apps Script 中修改剛剛複製的 GitHub Code 中的：<br/>
+    (1) 取得 LINE 的 Channel access token：<br/>
+         (1.1) 登入https://developers.line.biz/console/，依序操作：<br/>
+         (1.2) 進入你在第 1 步中所建立的 Line Developers Provider<br/>
+         (1.3) 選擇 Messaging API 頁籤<br/>
+         (1.4) 找到 Channel access token 區塊，點擊"Issue"<br/>
+         (1.5) 複製所產生的 access token<br/>
+    (2) 將 Channel access token 指定到變數中<br/>
+         (2.1) 找到程式中的 line_token (第3行) 與 token(第35行)：<br/>
+         (2.2) 將剛剛複製的 Channel access token 貼上，作為這兩個變數的值  <br/>
+    (3) 第 36 行的 userId 目前先保留原樣，不做更動 <br/>
+    (4) 根據需求調整其他內容：例如可以修改： 訊息(message)、時間 (days[]、atHour()、nearMinute()) <br/>
    
    
