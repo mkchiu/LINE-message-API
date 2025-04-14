@@ -33,6 +33,7 @@ function doPost(e) {
 //觸發條件不使用以下function
 function 業務報報_早會() {
   var token = 'Channel access token';  //Line Developers-Messaging API-Channel access token
+  var userId = ''
   var message = "【9點業務早會通知】所有業務與業務助理請準備參加上午9點的業務早會，請自行登入早會連結。若 ALAN 通知今日不開會，則請自行處理各自的工作。 \n https://meet.XXXXXX.com "; //可輸入任何文字
   var url = 'https://api.line.me/v2/bot/message/push';
   UrlFetchApp.fetch(url, {
