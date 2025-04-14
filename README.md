@@ -26,7 +26,7 @@
     (10.4) 點擊左側選單的 設定 > 回應設定 > 回應功能 > Webhook > (下方綠色小字)"開啟Messaging API的設定畫面" (點擊綠色小字後跳頁)。<br/>
 11. LINE Official Account Manager - Messaging API：<br/>
     (11.1) 點選"啟用Messaging API"<br/>
-    (11.2) ` __選擇服務提供者：選擇上述 1 在 LINE Developer Console 所建立的 Provider 名稱，點選同意__ ` __(重要)__ <br/>
+    (11.2) __選擇服務提供者：選擇上述 1 在 LINE Developer Console 所建立的 Provider 名稱，點選同意__  __(重要)__ <br/>
     (11.3) 暫不填寫 "隱私權政策"、"服務條款" (選填，可以不填寫)，直接點選確定<br/>
     (11.4) 最終會出現 [啟用Messaging API] ，直接點選確定<br/>
 - - -
