@@ -12,7 +12,7 @@ LINE 群組定時自動訊息通知設定指南：
 5. 點擊"稍後進行認證(前往管理畫面)"
 6. 同意我們使用您的資訊，點選"同意"
 7. LINE官方帳號使用條款更新啟事，點選"了解並繼續使用"
-8. 頁面會自動轉到 LINE Official Account Manager
+8. 頁面會自動轉到 LINE Official Account Manager (登入 LINE 官方帳號管理後台 ，若尚未擁有帳號，可免費註冊一個：https://tw.linebiz.com/login/ )
 9. 彈窗：開始經營帳號前(1/2)，點擊右上角的 "X"
 10. 
    
