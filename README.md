@@ -29,15 +29,16 @@
     (2) 選擇服務提供者：選擇上述 1 在 LINE Developer Console 所建立的 Provider 名稱，點選同意<br/>
     (3) 暫不填寫 "隱私權政策"、"服務條款" (選填，可以不填寫)，直接點選確定<br/>
     (4) 最終會出現 [啟用Messaging API] ，直接點選確定<br/>
-============================================================================================================
-10. 登入 Google 雲端硬碟的 JavaScript Apps Script 平台 (Google Apps Script)
+================================================================================
+================================================================================
+11. 登入 Google 雲端硬碟的 JavaScript Apps Script 平台 (Google Apps Script)
    https://script.google.com/home?hl=zh-tw
-11. 成功登入後，點擊左上角" + 新專案"
-12. 點擊左側選單的"專案設定"，在"一般設定"的時區選擇"台北標準時間-台北(GMT+08:00)"
-13. 點擊左側選單的"編輯器"
-14. 先將"程式嗎.gs"檔案的右側 Code Window 中的 function myFunction() {} 刪除
-15. 再將 GitHub Code (punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
-16. 修改 GitHub Code 中的
+12. 成功登入後，點擊左上角" + 新專案"
+13. 點擊左側選單的"專案設定"，在"一般設定"的時區選擇"台北標準時間-台北(GMT+08:00)"
+14. 點擊左側選單的"編輯器"
+15. 先將"程式嗎.gs"檔案的右側 Code Window 中的 function myFunction() {} 刪除
+16. 再將 GitHub Code (punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
+17. 修改 GitHub Code 中的
     (1) line_token、token：改成
     (2) userId (先不改)
     (3) 其他：例如 訊息(message)、時間 (days[]、atHour()、nearMinute())
