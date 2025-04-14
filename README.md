@@ -1,6 +1,6 @@
 # LINE-message-API
 
-LINE 群組定時自動訊息通知設定指南：
+# LINE 群組定時自動訊息通知設定指南：
 1. 前往 LINE Developer Console，建立一個 Provider，並記下你設定的 Provider 名稱：
    https://developers.line.biz/zh-hant/services/messaging-api/
 2. 選擇"Create a Messaging API channel"，點擊"Create a LINE Official Account"，經過以下3個步驟：
@@ -18,8 +18,6 @@ LINE 群組定時自動訊息通知設定指南：
    
    
 
-3. 登入 LINE 官方帳號管理後台 ，若尚未擁有帳號，可免費註冊一個：
-   https://tw.linebiz.com/login/
 4. 成功登入後，建立新的 LINE 官方帳號。請注意：帳號名稱在修改後的 7 天內無法再次變更。
 5. 建立LINE官方帳號：此名稱將顯示於LINE的好友名單及聊天畫面中，填寫基本訊息(EMAIL等)。
 6. 上述 5 基本訊息填寫完之後會出現 "您的LINE官方帳號已建立完成"，暫不選擇"申請認證帳號"，直接選擇"稍後進行認證(前往管理畫面)"，記住"帳號資訊"的基本ID: @999xxxx(舉例) 。
