@@ -29,8 +29,8 @@ LINE 群組定時自動訊息通知設定指南：
 13. 先將"程式嗎.gs"檔案的右側 Code Window 中的 function myFunction() {} 刪除
 14. 再將 GitHub Code (punch out) 複製黏貼到"程式嗎.gs"檔案的右側 Code Window
 15. 修改 GitHub Code 中的
-    (1) line_token、token
-    (3) userId：
-    (4) 其他：例如 訊息(message)、時間 (days[]、atHour()、nearMinute())
+    (1) line_token、token：改成
+    (2) userId (先不改)
+    (3) 其他：例如 訊息(message)、時間 (days[]、atHour()、nearMinute())
    
    
